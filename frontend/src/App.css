@@ -1,0 +1,73 @@
+:root {
+  --background-light: white;
+  --background-dark: #121212;
+  --text-light: black;
+  --text-dark: white;
+
+  --primary:#172626;
+  --secondary: #0E7058;
+  --accent: #1D84B5;
+  --grey: #d9d9d9;
+}
+
+/* Apply to body for global effect */
+body.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.button-fill {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 15px;
+  margin: 0.5rem;
+  transition: all .5s;
+  color:#ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-stroke {
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  border-radius: 15px;
+  margin: 0.5rem;
+  transition: all .5s;
+  color:var(--secondary);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-stroke-white {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  margin: 0.5rem;
+  transition: all .5s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-fill:hover {
+  border: 1px solid var(--accent);
+  scale: 1.05;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-stroke:hover {
+  background-color: var(--secondary);
+  border: 1px solid var(--accent);
+  scale: 1.05;
+  color:white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-stroke-white:hover {
+  background-color: white;
+  border: 1px solid white;
+  scale: 1.05;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
